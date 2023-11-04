@@ -1,3 +1,4 @@
+{{ config(materialized='external', location="{{var('out_dir')}}" + 'out.parquet', format='parquet', options={'codec': 'zstd'})}}
 with customers as (
 
     select
