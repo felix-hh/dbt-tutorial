@@ -14,6 +14,8 @@ Try running the following commands:
 - dbt run
 - dbt test
 
+`dbt run --vars '{"out_dir": "s3://felixh-shareables/dbt-tutorial/"}'` will load the result to s3
+
 ### Using with DuckDB
 
 `dbt-duckdb` setup: https://docs.getdbt.com/docs/core/connect-data-platform/duckdb-setup
