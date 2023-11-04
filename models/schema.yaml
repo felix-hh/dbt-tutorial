@@ -1,5 +1,13 @@
 version: 2
 
+sources:
+  - name: dbt_tutorial
+    meta:
+      external_location: "s3://dbt-tutorial-public/{name}.csv"
+    tables:
+      - name: jaffle_shop_customers
+      - name: jaffle_shop_orders
+
 models:
   - name: customers
     description: One record per customer
