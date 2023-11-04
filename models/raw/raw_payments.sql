@@ -1,0 +1,1 @@
+select * from 's3://dbt-tutorial-public/stripe_payments.csv'
